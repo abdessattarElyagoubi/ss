@@ -9,9 +9,9 @@ jobs:
     steps:
       - name: Downloading ngrok
         run: |
-          Invoke-WebRequest https://raw.githubusercontent.com/abdessattarElyagoubi/ss/main/resources/ngrok.zip -OutFile ngrok.zip
-          Invoke-WebRequest https://raw.githubusercontent.com/abdessattarElyagoubi/ss/main/resources/start.bat -OutFile start.bat
-          Invoke-WebRequest https://raw.githubusercontent.com/abdessattarElyagoubi/ss/main/resources/loop.bat -OutFile loop.bat
+          Invoke-WebRequest https://raw.githubusercontent.com/abdessattarElyagoubi/ss/main/Resources/ngrok.zip -OutFile ngrok.zip
+          Invoke-WebRequest https://raw.githubusercontent.com/abdessattarElyagoubi/ss/main/Resources/start.bat -OutFile start.bat
+          Invoke-WebRequest https://raw.githubusercontent.com/abdessattarElyagoubi/ss/main/Resources/loop.bat -OutFile loop.bat
 
       - name: Extracting ngrok Files
         run: Expand-Archive ngrok.zip
